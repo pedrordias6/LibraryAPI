@@ -4,7 +4,7 @@ A REST API for managing books in a library.
 
 ## Tech Stack
 
-- Java 21
+- Java 25
 - Spring Boot 3
 - Maven
 - PostgreSQL
