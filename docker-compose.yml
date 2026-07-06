@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: libraryapi-postgres
+    environment:
+      POSTGRES_DB: libraryapi
+      POSTGRES_USER: libraryapi
+      POSTGRES_PASSWORD: libraryapi
+    ports:
+      - "5432:5432"
+    volumes:
+      - libraryapi-postgres-data:/var/lib/postgresql/data
+
+volumes:
+  libraryapi-postgres-data:
